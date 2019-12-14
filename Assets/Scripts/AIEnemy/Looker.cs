@@ -12,9 +12,9 @@ public class Looker : MonoBehaviour
     void Update()
     {
         if(m_ifMovingDown == false){
-            transform.position -= new Vector3(0,0,0.1f);
+            transform.position -= new Vector3(0,0,m_movingDown);
         } else {
-            transform.position += new Vector3(0,0,0.1f);
+            transform.position += new Vector3(0,0,m_movingDown);
         }
         if (transform.position.z >  10)
         {
